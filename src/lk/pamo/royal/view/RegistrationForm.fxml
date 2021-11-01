@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.pamo.royal.controller.RegistrationFormController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="550.0" layoutY="4.0" prefHeight="59.0" prefWidth="303.0" text="Registration Form">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="58.0" prefHeight="59.0" prefWidth="215.0" text="Reg No">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="140.0" prefHeight="59.0" prefWidth="215.0" text="Student ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="235.0" prefHeight="59.0" prefWidth="215.0" text="Reg Date">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="322.0" prefHeight="59.0" prefWidth="215.0" text="Reg Fee">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="795.0" layoutY="144.0" prefHeight="59.0" prefWidth="146.0" text="Course ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtregDate" layoutX="328.0" layoutY="241.0" prefHeight="44.0" prefWidth="439.0" />
+      <TextField fx:id="txtregFee" layoutX="327.0" layoutY="329.0" prefHeight="44.0" prefWidth="447.0" />
+      <TableView fx:id="tblReg" layoutX="-2.0" layoutY="394.0" prefHeight="172.0" prefWidth="1305.0">
+         <columns>
+            <TableColumn prefWidth="150.0" text="Reg No" />
+            <TableColumn minWidth="0.0" prefWidth="424.0" text="Student ID" />
+            <TableColumn prefWidth="466.0" text="Student Name" />
+            <TableColumn prefWidth="138.0" text="Reg Date" />
+            <TableColumn minWidth="0.0" prefWidth="122.0" text="Reg fee" />
+            <TableColumn prefWidth="75.0" text="Course ID" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="btnRegSave" layoutX="802.0" layoutY="328.0" mnemonicParsing="false" onAction="" prefHeight="30.0" prefWidth="98.0" text="Save">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="925.0" layoutY="328.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="98.0" text="Update">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="1044.0" layoutY="330.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="98.0" text="Delete">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="1170.0" layoutY="328.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="98.0" text="Search">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cmbStuID" layoutX="331.0" layoutY="151.0" prefHeight="44.0" prefWidth="438.0" />
+      <ComboBox fx:id="cmbCourseID" layoutX="951.0" layoutY="152.0" prefHeight="44.0" prefWidth="223.0" />
+      <Label layoutX="802.0" layoutY="58.0" prefHeight="44.0" prefWidth="146.0" text="Student Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStudentName" layoutX="951.0" layoutY="59.0" prefHeight="45.0" prefWidth="328.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="795.0" layoutY="234.0" prefHeight="59.0" prefWidth="156.0" text="Course Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCourseName" layoutX="948.0" layoutY="241.0" prefHeight="45.0" prefWidth="328.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtregID" layoutX="335.0" layoutY="66.0" prefHeight="44.0" prefWidth="439.0" />
+   </children>
+</AnchorPane>
